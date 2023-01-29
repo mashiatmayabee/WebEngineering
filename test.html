@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="/Assignment-1/assets/style.css">
+</head>
+<body>
+    <header>
+
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+            <div class="container-fluid">
+              <a class="navbar-brand mt-2" href="#"> <p><img src="./assets/ru.png" alt="RU" class="d-inline"> Rajshahi University</p> </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link active " aria-current="page" href="#">Instruction</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Contact Us</a>
+                  </li>
+                  
+                </ul>
+            </div>
+            <div class="me-5 navbar-nav">
+    
+                <li class="dropdown ">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      <i class="bi bi-person"></i> admin admin
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                      <span class="text-secondary p-1 mb-3">Update</span> 
+                    <li><a class="dropdown-item" href="#"><i class="bi bi-pencil-square"></i>  Change Password</a></li>
+                    <li><a class="dropdown-item" href="#"><i class="bi bi-box-arrow-left"></i>  Logout</a></li>
+                  </ul>
+                </li>
+            </div>
+            </div>
+          </nav>
+    </header>
+    <div class="container-fluid">
+        <div class="row">
+
+            <div class="col-md-3 position-sticky pt-3 sidebar-sticky">
+                <ul class="nav flex-column">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#"> <i class="bi bi-speedometer"></i>
+                      Dashboard
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        <i class="bi bi-search"></i> Application Search
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        <i class="bi bi-people-fill"></i> Students
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        <i class="bi bi-currency-dollar"></i> Bills
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        <i class="bi bi-tag-fill"></i> OTH Application
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        <i class="bi bi-inbox-fill"></i> Complain Box
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        <i class="bi bi-magic"></i> Photo Changes
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        <i class="bi bi-inbox-fill"></i> SMS Sender
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        <i class="bi bi-check-square-fill"></i> Check Photos
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        <i class="bi bi-x-circle-fill"></i> Rejected Photos
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">
+                      Download Quota Docs
+                    </a>
+                  </li>
+                </ul>
+        
+                <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted text-uppercase active">
+                  <span>Admin</span>
+                  
+                </h6>
+                <ul class="nav flex-column mb-2">
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">
+                      <i class="bi bi-people"></i> Users
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        <i class="bi bi-person-fill-gear"></i> App. Settings
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        <i class="bi bi-file-earmark-text-fill"></i> Log Viewer
+                    </a>
+                  </li>
+                </ul>
+              </div>
+        
+              
+        
+            <div class="col-md-9 ms-sm-auto px-md-4 pt-2"><div class="chartjs-size-monitor"><div class="chartjs-size-monitor-expand"><div class=""></div></div><div class="chartjs-size-monitor-shrink"><div class=""></div></div></div>
+                <div class="row">
+                    <div class="col-2">
+                    <input type="text" class="form-control" placeholder="Bill Number" aria-label="Bill Number">
+                    </div>
+                    <div class="col-2">
+                    <input type="text" class="form-control" placeholder="Applicant ID" aria-label="Applicant ID">
+                    </div>
+                    <div class="col-2">
+                        <label class="visually-hidden" for="autoSizingSelect">purpose</label>
+                        <select class="form-select" id="autoSizingSelect">
+                          <option selected>purpose</option>
+                          <option value="1">One</option>
+                          <option value="2">Two</option>
+                          <option value="3">Three</option>
+                        </select>
+                    </div>
+                    <div class="col-2">
+                        <label class="visually-hidden" for="autoSizingSelect">Status</label>
+                        <select class="form-select" id="autoSizingSelect">
+                          <option selected>status</option>
+                          <option value="1">One</option>
+                          <option value="2">Two</option>
+                          <option value="3">Three</option>
+                        </select>
+                    </div>
+                    <div class="col-1">
+                        <button type="button" class="btn btn-primary">Search</button>
+
+                    </div>
+                </div>
+                <h2> <i class="bi bi-tag-fill"></i> Bill Information</h2>
+                <div class="table-responsive">
+                  <table class="table table-striped table-sm">
+                    <thead>
+                      <tr>
+                        <th scope="col">id</th>
+                        <th scope="col">Applicant</th>
+                        <th scope="col">Amount</th>
+                        <th scope="col">Units</th>
+                        <th scope="col">Quota</th>
+                        <th scope="col">Mobile No</th>
+                        <th scope="col">Purpose</th>
+                        <th scope="col">Status</th>
+                        <th scope="col">Created</th>
+                        <th colspan="2">Action</th>
+                        
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>100002</td>
+                        <td>Lorem</td>
+                        <td>Lorem</td>
+                        <td>Lorem</td>
+                        <td>Lorem</td>
+                        <td>Lorem</td>
+                        <td>Lorem</td>
+                        <td>Lorem</td>
+                        <td>Lorem</td>
+                        <td><i class="bi bi-person-fill"></i> Details</td>
+                        <td><i class="bi bi-file-earmark-arrow-down-fill"></i>DL</td>
+                      </tr>
+                      <tr>
+                        <td>100002</td>
+                        <td>Lorem</td>
+                        <td>Lorem</td>
+                        <td>Lorem</td>
+                        <td>Lorem</td>
+                        <td>Lorem</td>
+                        <td>Lorem</td>
+                        <td>Lorem</td>
+                        <td>Lorem</td>
+                        <td><i class="bi bi-person-fill"></i> Details</td>
+                        <td><i class="bi bi-file-earmark-arrow-down-fill"></i>DL</td>
+                      </tr>
+                      <tr>
+                        <td>100002</td>
+                        <td>Lorem</td>
+                        <td>Lorem</td>
+                        <td>Lorem</td>
+                        <td>Lorem</td>
+                        <td>Lorem</td>
+                        <td>Lorem</td>
+                        <td>Lorem</td>
+                        <td>Lorem</td>
+                        <td><i class="bi bi-person-fill"></i> Details</td>
+                        <td><i class="bi bi-file-earmark-arrow-down-fill"></i>DL</td>
+                      </tr>
+                      <tr>
+                        <td>100002</td>
+                        <td>Lorem</td>
+                        <td>Lorem</td>
+                        <td>Lorem</td>
+                        <td>Lorem</td>
+                        <td>Lorem</td>
+                        <td>Lorem</td>
+                        <td>Lorem</td>
+                        <td>Lorem</td>
+                        <td><i class="bi bi-person-fill"></i> Details</td>
+                        <td><i class="bi bi-file-earmark-arrow-down-fill"></i>DL</td>
+                      </tr>
+                      <tr>
+                        <td>100002</td>
+                        <td>Lorem</td>
+                        <td>Lorem</td>
+                        <td>Lorem</td>
+                        <td>Lorem</td>
+                        <td>Lorem</td>
+                        <td>Lorem</td>
+                        <td>Lorem</td>
+                        <td>Lorem</td>
+                        <td><i class="bi bi-person-fill"></i> Details</td>
+                        <td><i class="bi bi-file-earmark-arrow-down-fill"></i>DL</td>
+                      </tr>
+                      <tr>
+                        <td>100002</td>
+                        <td>Lorem</td>
+                        <td>Lorem</td>
+                        <td>Lorem</td>
+                        <td>Lorem</td>
+                        <td>Lorem</td>
+                        <td>Lorem</td>
+                        <td>Lorem</td>
+                        <td>Lorem</td>
+                        <td><i class="bi bi-person-fill"></i> Details</td>
+                        <td><i class="bi bi-file-earmark-arrow-down-fill"></i>DL</td>
+                      </tr>
+                      <tr>
+                        <td>100002</td>
+                        <td>Lorem</td>
+                        <td>Lorem</td>
+                        <td>Lorem</td>
+                        <td>Lorem</td>
+                        <td>Lorem</td>
+                        <td>Lorem</td>
+                        <td>Lorem</td>
+                        <td>Lorem</td>
+                        <td><i class="bi bi-person-fill"></i> Details</td>
+                        <td><i class="bi bi-file-earmark-arrow-down-fill"></i>DL</td>
+                      </tr>
+                      <tr>
+                        <td>100002</td>
+                        <td>Lorem</td>
+                        <td>Lorem</td>
+                        <td>Lorem</td>
+                        <td>Lorem</td>
+                        <td>Lorem</td>
+                        <td>Lorem</td>
+                        <td>Lorem</td>
+                        <td>Lorem</td>
+                        <td><i class="bi bi-person-fill"></i> Details</td>
+                        <td><i class="bi bi-file-earmark-arrow-down-fill"></i>DL</td>
+                      </tr>
+                      <tr>
+                        <td>100002</td>
+                        <td>Lorem</td>
+                        <td>Lorem</td>
+                        <td>Lorem</td>
+                        <td>Lorem</td>
+                        <td>Lorem</td>
+                        <td>Lorem</td>
+                        <td>Lorem</td>
+                        <td>Lorem</td>
+                        <td><i class="bi bi-person-fill"></i> Details</td>
+                        <td><i class="bi bi-file-earmark-arrow-down-fill"></i>DL</td>
+                      </tr>
+                      <tr>
+                        <td>100002</td>
+                        <td>Lorem</td>
+                        <td>Lorem</td>
+                        <td>Lorem</td>
+                        <td>Lorem</td>
+                        <td>Lorem</td>
+                        <td>Lorem</td>
+                        <td>Lorem</td>
+                        <td>Lorem</td>
+                        <td><i class="bi bi-person-fill"></i> Details</td>
+                        <td><i class="bi bi-file-earmark-arrow-down-fill"></i>DL</td>
+                      </tr>
+                      <tr>
+                        <td>100002</td>
+                        <td>Lorem</td>
+                        <td>Lorem</td>
+                        <td>Lorem</td>
+                        <td>Lorem</td>
+                        <td>Lorem</td>
+                        <td>Lorem</td>
+                        <td>Lorem</td>
+                        <td>Lorem</td>
+                        <td><i class="bi bi-person-fill"></i> Details</td>
+                        <td><i class="bi bi-file-earmark-arrow-down-fill"></i>DL</td>
+                      </tr>
+                      <tr>
+                        <td>100002</td>
+                        <td>Lorem</td>
+                        <td>Lorem</td>
+                        <td>Lorem</td>
+                        <td>Lorem</td>
+                        <td>Lorem</td>
+                        <td>Lorem</td>
+                        <td>Lorem</td>
+                        <td>Lorem</td>
+                        <td><i class="bi bi-person-fill"></i> Details</td>
+                        <td><i class="bi bi-file-earmark-arrow-down-fill"></i>DL</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <nav aria-label="..." >
+                    <ul class="pagination justify-content-center">
+                      <li class="page-item disabled">
+                        <a class="page-link" href="#" tabindex="-1">Previous</a>
+                      </li>
+                      <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                      <li class="page-item">
+                        <a class="page-link" href="#">2 <span class="sr-only"></span></a>
+                      </li>
+                      <li class="page-item"><a class="page-link" href="#">3</a></li>
+                      <li class="page-item"><a class="page-link" href="#">....</a></li>
+                      <li class="page-item">
+                        <a class="page-link" href="#">Next</a>
+                      </li>
+                    </ul>
+                  </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
