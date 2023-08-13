@@ -1,0 +1,16 @@
+{% for book in books %}
+<tr>
+    <td> {{ book.id }} </td>
+    <td> {{ book.isbn }} </td>
+    <td> {{ book.title }} </td>
+    <td> {{ book.price }} </td>
+    <td> {{ book.author }} </td>
+    {% if book.stock > 20 %}
+        <td class = "bg-success"> {{ book.stock }} </td>
+    {% else %}
+        <td class = "bg-danger"> {{ book.stock }} </td>
+    {% endif %}
+</tr>
+{% endfor %}
+    
+    
